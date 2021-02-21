@@ -14,7 +14,7 @@
           <p>ราคารวม = {{ tprice }}</p>
         </b-col>
         <b-col cols="auto">
-          <b-button variant="info" href="/about">ลบสินค้าทั้งหมด</b-button>
+          <b-button variant="info" href="/">ลบสินค้าทั้งหมด</b-button>
         </b-col>
         <b-col cols="auto">
           <b-button variant="success"  @click="$bvModalshow('bv-modal-example')"
