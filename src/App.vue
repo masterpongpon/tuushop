@@ -1,16 +1,29 @@
 <template>
   <div id="app">
-    <b-navbar toggleable type="dark" variant="dark">
-      <b-navbar-brand href="/้home">TuuShop</b-navbar-brand>
-      <b-navbar-toggle target="navbar-toggle">
-        <template #default="{ expanded }">
-          <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
-          <b-icon v-else icon="basket"></b-icon>
-        </template>
-      </b-navbar-toggle>
-    </b-navbar>
-
-    <router-view :cardList="cardList"/>
+    <div>
+      <b-navbar type="dark" variant="dark">
+        <b-navbar-nav>
+          <router-link to="/" class="container">
+            <b-nav-item href="/">TuuShop</b-nav-item>
+          </router-link>
+        </b-navbar-nav>
+        <b-navebar-nav class="ml-auto">
+          <div>
+            <router-link to="/About">
+              <b-button variant="outline-info" @click="sum">
+                <b-icon icon="basket" aria-hidden="ture"></b-icon>
+              </b-button>
+            </router-link>
+          </div>
+        </b-navebar-nav>
+      </b-navbar>
+    </div>
+    <router-view
+      :cardList="cardList"
+      :product="product"
+      @update-cart="UpProduct"
+      :tprice="tprice"
+    />
   </div>
 </template>
 
@@ -64,8 +77,21 @@ export default {
           nameProduct: "รองเท้าคอมแบท",
           img: "https://dy.lnwfile.com/x7f4nw.jpg"
         }
-      ]
+      ],
+      product: [],
+      tprice: 0
     };
+  },
+  methods: {
+    UpProduct(value) {
+      this.product.push(value);
+    },
+    sum() {
+      this.tprice = 0;
+      for (var i = 0; i < this.product.length; i++) {
+        this.tprice = this.tprice + this.product[i].price;
+      }
+    }
   }
 };
 </script>
