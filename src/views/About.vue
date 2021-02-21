@@ -17,7 +17,7 @@
           <b-button variant="info" href="/about">ลบสินค้าทั้งหมด</b-button>
         </b-col>
         <b-col cols="auto">
-          <b-button variant="success" @click="$bvModalshow('bv-modal-example')"
+          <b-button variant="success"  @click="$bvModalshow('bv-modal-example')"
             >Payment</b-button
           >
         </b-col>
