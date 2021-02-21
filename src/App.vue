@@ -51,29 +51,29 @@ export default {
             "https://cdn.pixabay.com/photo/2021/01/24/21/58/helicopter-5946667__340.png"
         },
         {
-          price: 20000,
+          price: 9500,
           nameProduct: "โล่ตำรวจ",
           img:
             "https://www.grossiste-chinois-import.com/images/full_size/bouclier_police_POLBCLKL01.jpg"
         },
         {
-          price: 20000,
+          price: 2000,
           nameProduct: "กระบองตำรวจ",
           img: "https://www.newtv.co.th/images/content/ct_20190702111959469.jpg"
         },
         {
-          price: 20000,
+          price: 5000,
           nameProduct: "แก๊สน้ําตา",
           img: "https://www.catdumb.com/wp-content/uploads/2019/05/2-389.jpg"
         },
         {
-          price: 20000,
+          price: 200000,
           nameProduct: "M4A1",
           img:
             "https://cdn.shopify.com/s/files/1/0546/8541/products/TIPPMANN_M4_CARBINE_AIRSOFT_RIFLE1_clipped_rev_ROJ17E83UAKZ_2000x.png?v=1575931652"
         },
         {
-          price: 20000,
+          price: 2000,
           nameProduct: "รองเท้าคอมแบท",
           img: "https://dy.lnwfile.com/x7f4nw.jpg"
         }

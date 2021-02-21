@@ -16,7 +16,7 @@
         max="100"
       ></b-form-spinbutton>
       <div>
-        <b-button class="mt-3" @click="addToCart" variant="success">{{ textbutton }}</b-button>
+        <b-button class="mt-3" @click="addToCart" variant="outline-dark">{{ textbutton }}</b-button>
       </div>
     </b-card>
   </div>
