@@ -3,7 +3,7 @@
     <b-container>
       <br />
       <b-row>
-        <b-col cols="4" v-for="index in cardList" :key="index">
+        <b-col cols="lg-4" v-for="index in cardList" :key="index">
           <Product
             :img="index.img"
             :price="index.price"
