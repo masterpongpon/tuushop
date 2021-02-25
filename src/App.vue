@@ -89,7 +89,7 @@ export default {
     sum() {
       this.tprice = 0;
       for (var i = 0; i < this.product.length; i++) {
-        this.tprice = this.tprice + this.product[i].price;
+        this.tprice = this.tprice + this.product[i].Sum;
       }
     }
   }
